@@ -7,7 +7,24 @@ def make_empty_board():
 def get_winner(board):
     """Determines the winner of the given board.
     Returns 'X', '0', or None. """
-    return None  #FIXME
+    if board[0][0] == board[0][1] == board[0][2] and board[0][0]!=None:
+        return board[0][0] 
+    if board[1][0] == board[1][1] == board[1][2] and board[1][0]!=None:
+        return board[0][0] 
+    if board[2][0] == board[2][1] == board[2][2] and board[2][0]!=None:
+        return board[0][0] 
+    if board[0][0] == board[1][1] == board[2][2] and board[0][0]!=None:
+        return board[0][0] 
+    if board[2][0] == board[1][1] == board[0][2] and board[2][0]!=None:
+        return board[0][0] 
+    if board[1][0] == board[2][0] == board[3][0] and board[1][0]!=None:
+        return board[0][0]
+    if board[1][1] == board[2][1] == board[3][1] and board[1][1]!=None:
+        return board[0][0] 
+    if board[2][2] == board[1][2] == board[0][2] and board[2][2]!=None:
+        return board[0][0] 
+    return None
+
 def other_player(player):
     """Given the character for a player, returns the other player."""
     return '0'  #FIXME
@@ -98,7 +115,6 @@ def game():
         else:
             turn = 'X'
 
-if __name__ == "__main__":
-    game()
+
     
 

@@ -1,4 +1,5 @@
-from logic import import make_empty_board
+from logic import *
+
 
 if __name__ == '__main__':
     board = make_empty_board()
@@ -9,3 +10,5 @@ if __name__ == '__main__':
         # TODO: Input a move from the player.
         # TODO: Update who's turn it is. 
         winner = 'X' # FIXME
+
+    game()

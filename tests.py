@@ -9,6 +9,8 @@ class TestLogic(unittest.TestCase):
             [None, 'X', None],
             [None, '0', 'X']
         ]
+
         self.assertEqual(logic.get_winner(board),'X')
     #TODO: Test All Functions from logic.py!
-if__name__ == '__main__'
+if __name__ == '__main__':
+    unittest.main()
